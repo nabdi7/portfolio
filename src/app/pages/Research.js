@@ -1,4 +1,14 @@
 import Image from 'next/image'
+'use client'
+
+export default function Research() {
+  return (
+    <div>
+      Research page content
+    </div>
+  );
+};
+
 
 
 {/* <p> Here's some of my Research.  </p>

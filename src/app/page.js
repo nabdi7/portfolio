@@ -1,95 +1,65 @@
+"use client"
 import Image from 'next/image'
-import styles from './page.module.css'
+import styles from './page.module.scss'
+import { FaLinkedinIn, FaGithub, FaInstagram } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+import Navbar from '@/app/components/Navbar';
+// import Footer from '../components/footer'
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+      <Navbar />
+      <div className={styles.mainPage}>
+        <div className={styles.pageContainer}> 
+          <div className={styles.container}>
+            <div className={styles.imageContainer}>
+              <Image 
+                src="/images/najib4.jpg"
+                alt="Photo"
+                width={1125}
+                height={150}
+                priority
+                className={styles.nextImage}
+              />
+            </div>
+
+            <div className={styles.textContainer}>
+              <div className={styles.aboutText}>
+                <p> Hey, I am a Software Engineer and an incoming first-year Master&rsquo;s student in Computer Science at Georgia Tech University, specializing in Machine Learning. </p>
+                <p> My primary objective is to develop functional software solutions. I&rsquo;m passionate about Machine Learning, and Full-Stack development. </p>
+
+                <p> I attained a BS at the University of Washington in Computer Science and a minor in Business Administration. </p>
+                        
+                <p> I have hands-on experience in full-stack web and mobile app development, as well as  machine learning with a variety of programming languages and frameworks.</p>
+
+                <p> I have a passion for learning new libraries, languages, and frameworks, embracing challenges in software engineering. I enjoy solving complex problems, both independently and collaboratively.</p>
+
+              </div>
+            </div>
+          </div>
+
+
+          <div className={styles.icons}>
+            <a href="https://github.com/nabdi7" target="_blank" rel="noopener noreferrer">
+              <FaGithub />
+            </a>
+            <a href="https://www.linkedin.com/in/najib-abdi/" target="_blank" rel="noopener noreferrer">
+              <FaLinkedinIn />
+            </a>
+            <a href="https://instagram.com/najibabdi7" target="_blank" rel="noopener noreferrer">
+              <FaInstagram />
+            </a>
+            <a href="mailto:abdinajka@gmail.com" target="_blank" rel="noopener noreferrer">
+              <MdEmail />
+            </a>
+          </div>
+          
         </div>
       </div>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+   
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    </>
   )
 }
