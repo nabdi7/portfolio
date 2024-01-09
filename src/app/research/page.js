@@ -1,7 +1,8 @@
-import Image from 'next/image'
 'use client'
+import Image from 'next/image'
 
-export default function Research() {
+
+export default function ResearchPage() {
   return (
     <div>
       Research page content

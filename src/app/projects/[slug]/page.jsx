@@ -1,3 +1,4 @@
+'use client'
 import Image from 'next/image'
 import { CiSearch } from "react-icons/ci";
 import Navbar from '/Navbar';
@@ -5,7 +6,7 @@ import Navbar from '/Navbar';
 {/* // TODO: add search function, add topic tags 
 // TODO: add image format for projects and topic tags (languages used: ex JavaScript, categories: ex frontend) */}
 
-export default function Projects() {
+export default function ProjectsPage() {
   
   return (
     <>
