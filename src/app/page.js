@@ -3,15 +3,16 @@ import Image from 'next/image'
 import styles from './page.module.scss'
 import { FaLinkedinIn, FaGithub, FaInstagram } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
-import Navbar from '@/app/components/Navbar';
-// import Footer from '../components/footer'
+import Navbar from './components/Navbar' 
+// import Footer from './components/Footer'
 
 export default function Home() {
   
   return (
     <>
-      <Navbar />
+      
       <div className={styles.mainPage}>
+      <Navbar />
         <div className={styles.pageContainer}> 
           <div className={styles.container}>
             <div className={styles.imageContainer}>

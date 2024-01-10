@@ -4,15 +4,16 @@ import styles from '../styles/about.scss';
 import Image from 'next/image'
 import { FaLinkedinIn, FaGithub, FaInstagram } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
-import Navbar from '@/app/components/Navbar';
+import Navbar from '../components/Navbar' 
 // import Footer from '../components/footer'
 
 export default function AboutPage() {
 
   return (
     <>
-      <Navbar />
+      
       <div className='mainPage'>
+      <Navbar />
         <div className='pageContainer'> 
           <div className='container'>
             <div className='imageContainer'>

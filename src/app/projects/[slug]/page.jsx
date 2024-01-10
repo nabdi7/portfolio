@@ -11,102 +11,104 @@ export default function ProjectsPage() {
   return (
     <>
       <Navbar />
-      <div className='projects-page'>
+      <div className='mainPage'>
+        <div className='projects-page'>
 
-          <div className='search-container'>
-            <div class="search-projects">
-              <CiSearch className="search-icon" />
-              <input placeholder="Search projects..." type="text"> </input>
-            </div>   
-          </div>
+            <div className='search-container'>
+              <div class="search-projects">
+                <CiSearch className="search-icon" />
+                <input placeholder="Search projects..." type="text"> </input>
+              </div>   
+            </div>
 
-          <div className='project-result'>
-            <div class="project-filter active">
-              <label for="">All</label>
-            </div>
-            <div class="project-filter">
-              <label for="">Frontend &amp; UI Development</label>
-            </div>
-            <div class="project-filter">
-              <label for="">Full Stack Development</label>
-            </div>
-            <div class="project-filter">
-              <label for="">Mobile App development</label>
-            </div>
-            <div class="project-filter">
-              <label for="">Machine Learning / Artificial Intelligence</label>
-            </div>
-          </div>
-          
-          <div className='project-list'>
-            <div class="project-type">
-              <a href="/alhuda-islamic-center">
-                <label for="">Alhuda Islamic Center</label>
-              </a>
-              <p>Website for Al Huda Islamic Center in Kent WA, built using React.js, a popular JavaScript library for building user interfaces.</p>
-              <div class="pr-dv">
-                <div class="pr-dv2">
-                  <div class="pr-dvi">
-                    <div class="prg-language">
-                      <span class="reactjs"></span>
-                      <label>React.js</label>
-                    </div>
-                      <div class="pr-dv-divider"></div>
-                  </div>
-                  <div class="pr-dvi">
-                    <div class="prg-language">
-                      <span class="reactjs"></span>
-                      <label>React.js</label>
-                    </div>
-                      <div class="pr-dv-divider"></div>
-                  </div>
-                </div>
+            <div className='project-result'>
+              <div class="project-filter active">
+                <label for="">All</label>
+              </div>
+              <div class="project-filter">
+                <label for="">Frontend &amp; UI Development</label>
+              </div>
+              <div class="project-filter">
+                <label for="">Full Stack Development</label>
+              </div>
+              <div class="project-filter">
+                <label for="">Mobile App development</label>
+              </div>
+              <div class="project-filter">
+                <label for="">Machine Learning / Artificial Intelligence</label>
               </div>
             </div>
-            <hr></hr>
-
-            <div class="project-type">
-              <label for="">Almaas Family Childcare</label>
-              <p>A childcare website for a local business in Covington WA using React.js.</p>
-              <div class="pr-dv">
-                <div class="pr-dv2">
-                  <div class="pr-dvi">
-                  <div class="prg-language">
-                    <span class="reactjs"></span>
-                    <label>React.js</label>
-                  </div>
-                    <div class="pr-dv-divider"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <hr></hr>
-
-            <div class="project-type">
-              <label for="">Emotions TM</label>
-              <p>An emotional wellness app emphasizing connections to Quranic teachings and Hadiths using React Native and MongoDB.</p>
-              <div class="pr-dv">
-                <div class="pr-dv2">
-                  <div class="pr-dvi">
-                  <div class="prg-language">
-                    <span class="reactNative"></span>
-                    <label>React Native</label>
-                  </div>
-                    <div class="pr-dv-divider"></div>
-                  <div class="prg-language">
-                    <span class="mongoDb"></span>
-                    <label>MongoDB</label>
-                  </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <hr></hr>
             
-          
-          </div>
-          
+            <div className='project-list'>
+              <div class="project-type">
+                <a href="/alhuda-islamic-center">
+                  <label for="">Alhuda Islamic Center</label>
+                </a>
+                <p>Website for Al Huda Islamic Center in Kent WA, built using React.js, a popular JavaScript library for building user interfaces.</p>
+                <div class="pr-dv">
+                  <div class="pr-dv2">
+                    <div class="pr-dvi">
+                      <div class="prg-language">
+                        <span class="reactjs"></span>
+                        <label>React.js</label>
+                      </div>
+                        <div class="pr-dv-divider"></div>
+                    </div>
+                    <div class="pr-dvi">
+                      <div class="prg-language">
+                        <span class="reactjs"></span>
+                        <label>React.js</label>
+                      </div>
+                        <div class="pr-dv-divider"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr></hr>
 
+              <div class="project-type">
+                <label for="">Almaas Family Childcare</label>
+                <p>A childcare website for a local business in Covington WA using React.js.</p>
+                <div class="pr-dv">
+                  <div class="pr-dv2">
+                    <div class="pr-dvi">
+                    <div class="prg-language">
+                      <span class="reactjs"></span>
+                      <label>React.js</label>
+                    </div>
+                      <div class="pr-dv-divider"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr></hr>
+
+              <div class="project-type">
+                <label for="">Emotions TM</label>
+                <p>An emotional wellness app emphasizing connections to Quranic teachings and Hadiths using React Native and MongoDB.</p>
+                <div class="pr-dv">
+                  <div class="pr-dv2">
+                    <div class="pr-dvi">
+                    <div class="prg-language">
+                      <span class="reactNative"></span>
+                      <label>React Native</label>
+                    </div>
+                      <div class="pr-dv-divider"></div>
+                    <div class="prg-language">
+                      <span class="mongoDb"></span>
+                      <label>MongoDB</label>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr></hr>
+              
+            
+            </div>
+            
+
+        </div>
       </div>
           
 
