@@ -3,7 +3,8 @@
 import styles from '../styles/projects.scss';
 import Image from 'next/image'
 import { CiSearch } from "react-icons/ci";
-// import Navbar from '/Navbar';
+import Navbar from '../components/Navbar' 
+import Footer from '../components/Footer'
 
 {/* // TODO: add search function, add topic tags 
 // TODO: add image format for projects and topic tags (languages used: ex JavaScript, categories: ex frontend) */}
@@ -12,8 +13,9 @@ export default function ProjectsPage() {
   
   return (
     <>
-      {/* <Navbar /> */}
+      
       <div className='mainPage'>
+        <Navbar />
         <div className='projects-page'>
 
             <div className='search-container'>
@@ -112,6 +114,7 @@ export default function ProjectsPage() {
 
         </div>
       </div>
+      <Footer />
           
 
       {/* 

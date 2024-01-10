@@ -1,14 +1,23 @@
 'use client'
 import Image from 'next/image'
 import Navbar from '../components/Navbar' 
-// import Footer from '../components/footer'
+import Footer from '../components/Footer'
 
 export default function ResearchPage() {
   return (
+    <>
+    
     <div className='mainPage'>
       <Navbar />
-      Research page content
+      
+      <div className='researchPage'>
+        <p> Research In progress</p>
+      </div>
+
     </div>
+    <Footer />
+
+    </>
   );
 };
 

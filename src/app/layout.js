@@ -2,8 +2,6 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 
 // import './styles/nav.scss'
-// import './styles/home.scss'
-// import './styles/about.scss'
 // import './styles/research.scss'
 // import './styles/projects.scss'
 

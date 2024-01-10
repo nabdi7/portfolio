@@ -13,3 +13,5 @@ const withMDX = require('@next/mdx')({
     pageExtensions: ['js', 'jsx', 'mdx'], 
     // Your other Next.js configurations go here
   });
+
+  

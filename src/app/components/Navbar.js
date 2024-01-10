@@ -15,17 +15,15 @@ export default function Navbar() {
 
     }
  
- 
-    const [open,setOpen] = useState(null)
     const pathname = pathnamed()
     return (
         
         <nav className='navbar'>
             <div className='nav-links'>
                 
-                <div className={`navbar-menu ${pathname === '/about' ? 'active' : ''}`}>
-                    <Link href='/about'>
-                        <label className='link'>About</label>
+                <div className={`navbar-menu ${pathname === '/projects' ? 'active' : ''}`}>
+                    <Link href='/'>
+                        <label className='link'>Home</label>
                     </Link>
                 </div>
                 <div className={`navbar-menu ${pathname === '/projects' ? 'active' : ''}`}>
@@ -45,7 +43,6 @@ export default function Navbar() {
                 </div>
             </div>
 
-            {/* mobile icon */}
 
 
         </nav>

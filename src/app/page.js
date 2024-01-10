@@ -1,33 +1,33 @@
 "use client"
 import Image from 'next/image'
-import styles from './page.module.scss'
+import styles from './page.scss'
 import { FaLinkedinIn, FaGithub, FaInstagram } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import Navbar from './components/Navbar' 
-// import Footer from './components/Footer'
+import Footer from './components/Footer'
 
 export default function Home() {
   
   return (
     <>
       
-      <div className={styles.mainPage}>
+      <div className='mainPage'>
       <Navbar />
-        <div className={styles.pageContainer}> 
-          <div className={styles.container}>
-            <div className={styles.imageContainer}>
+        <div className='pageContainer'> 
+          <div className='container'>
+            <div className='imageContainer'>
               <Image 
                 src="/images/najib4.jpg"
                 alt="Photo"
                 width={1125}
                 height={150}
                 priority
-                className={styles.nextImage}
+                className='nextImage'
               />
             </div>
 
-            <div className={styles.textContainer}>
-              <div className={styles.aboutText}>
+            <div className='textContainer'>
+              <div className='aboutText'>
                 <p> Hey, I am a Software Engineer and an incoming first-year Master&rsquo;s student in Computer Science at Georgia Tech University, specializing in Machine Learning. </p>
                 <p> My primary objective is to develop functional software solutions. I&rsquo;m passionate about Machine Learning, and Full-Stack development. </p>
 
@@ -42,7 +42,7 @@ export default function Home() {
           </div>
 
 
-          <div className={styles.icons}>
+          <div className='icons'>
             <a href="https://github.com/nabdi7" target="_blank" rel="noopener noreferrer">
               <FaGithub />
             </a>
@@ -59,6 +59,7 @@ export default function Home() {
           
         </div>
       </div>
+      <Footer />
 
    
 
