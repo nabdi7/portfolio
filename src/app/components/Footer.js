@@ -1,24 +1,29 @@
 const Footer = () => {
-    const YEAR = new Date().getFullYear();
-  
-    return (
-      <small style={{ display: 'block', marginTop: '8rem' }}>
+  const YEAR = new Date().getFullYear();
+
+  return (
+    <div style={{ textAlign: 'center', marginTop: '8rem' }}>
+      <small>
         <time>{YEAR}</time> © Najib Abdi.
-        <a href="/feed.xml">RSS</a>
-        <style jsx>{`
-          a {
-            float: right;
-          }
-          @media screen and (max-width: 480px) {
-            article {
-              padding-top: 2rem;
-              padding-bottom: 4rem;
-            }
-          }
-        `}</style>
+        {/* <a href="/feed.xml">RSS</a> */}
       </small>
-    );
-  };
-  
-  export default Footer;
-  
+      <style jsx>{`
+        small {
+          display: block;
+        }
+        a {
+          display: inline-block;
+          margin-left: 10px; // Adjust the margin as needed
+        }
+        @media screen and (max-width: 480px) {
+          article {
+            padding-top: 2rem;
+            padding-bottom: 4rem;
+          }
+        }
+      `}</style>
+    </div>
+  );
+};
+
+export default Footer;
