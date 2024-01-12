@@ -14,8 +14,9 @@ export default function ProjectsPage() {
   return (
     <>
       
+      <Navbar />
       <div className='mainPage'>
-        <Navbar />
+        
         <div className='projects-page'>
 
             <div className='search-container'>
@@ -27,7 +28,7 @@ export default function ProjectsPage() {
 
             <div className='project-result'>
               <div className="project-filter active">
-                <label for="">All</label>
+                <label for="">All projects</label>
               </div>
               <div className="project-filter">
                 <label for="">Frontend &amp; UI Development</label>
@@ -47,7 +48,7 @@ export default function ProjectsPage() {
               <div className="project-type">
                 <a href="/alhuda-islamic-center">
                   <label for="">Alhuda Islamic Center</label>
-                </a>
+                
                 <p>Website for Al Huda Islamic Center in Kent WA, built using React.js, a popular JavaScript library for building user interfaces.</p>
                 <div className="pr-dv">
                   <div className="pr-dv2">
@@ -56,7 +57,7 @@ export default function ProjectsPage() {
                         <span className="reactjs"></span>
                         <label>React.js</label>
                       </div>
-                        <div className="pr-dv-divider"></div>
+                      <div className="pr-dv-divider"></div>
                     </div>
                     <div className="pr-dvi">
                       <div className="prg-language">
@@ -67,47 +68,82 @@ export default function ProjectsPage() {
                     </div>
                   </div>
                 </div>
+                </a>
               </div>
               <hr></hr>
 
               <div className="project-type">
-                <label for="">Almaas Family Childcare</label>
+                <a href="/almaas">
+                  <label for="">Almaas Family Childcare</label>
                 <p>A childcare website for a local business in Covington WA using React.js.</p>
                 <div className="pr-dv">
                   <div className="pr-dv2">
                     <div className="pr-dvi">
-                    <div className="prg-language">
-                      <span className="reactjs"></span>
-                      <label>React.js</label>
-                    </div>
+                      <div className="prg-language">
+                        <span className="reactjs"></span>
+                        <label>React.js</label>
+                      </div>
                       <div className="pr-dv-divider"></div>
                     </div>
                   </div>
                 </div>
+                </a>
               </div>
               <hr></hr>
 
               <div className="project-type">
-                <label for="">Emotions TM</label>
+                <a href="/emotions">
+                  <label for="">Emotions TM</label>
                 <p>An emotional wellness app emphasizing connections to Quranic teachings and Hadiths using React Native and MongoDB.</p>
                 <div className="pr-dv">
                   <div className="pr-dv2">
                     <div className="pr-dvi">
-                    <div className="prg-language">
-                      <span className="reactNative"></span>
-                      <label>React Native</label>
-                    </div>
-                      <div className="pr-dv-divider"></div>
-                    <div className="prg-language">
-                      <span className="mongoDb"></span>
-                      <label>MongoDB</label>
-                    </div>
+                      <div className="prg-language">
+                        <span className="reactNative"></span>
+                        <label>React Native</label>
+                      </div>
+                        <div className="pr-dv-divider"></div>
+                      <div className="prg-language">
+                        <span className="mongoDb"></span>
+                        <label>MongoDB</label>
+                      </div>
                     </div>
                   </div>
                 </div>
+                </a>
               </div>
               <hr></hr>
               
+              <div className="project-type">
+                <a href="/almaas">
+                  <label for="">Personal website (najibabdi.me)</label>
+                <p>My Current website developed using Next.js with MDX integration for blogging functionality and PostgreSQL dabatase for comments.</p>
+                <div className="pr-dv">
+                  <div className="pr-dv2">
+                    <div className="pr-dvi">
+                      <div className="prg-language">
+                        <span className="reactjs"></span>
+                        <label>Next.js</label>
+                      </div>
+
+                      <div className="pr-dv-divider"></div>
+
+                      <div className="prg-language">
+                        <span className="reactjs"></span>
+                        <label>MDX</label>
+                      </div>
+
+                      <div className="pr-dv-divider"></div>
+
+                      <div className="prg-language">
+                        <span className="reactjs"></span>
+                        <label>PostgreSQL</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </a>
+              </div>
             
             </div>
             

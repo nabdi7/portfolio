@@ -1,4 +1,6 @@
 'use client'
+
+import styles from '../styles/research.scss';
 import Image from 'next/image'
 import Navbar from '../components/Navbar' 
 import Footer from '../components/Footer'
@@ -7,8 +9,9 @@ export default function ResearchPage() {
   return (
     <>
     
+    <Navbar />
     <div className='mainPage'>
-      <Navbar />
+
       
       <div className='researchPage'>
         <p> Research In progress</p>

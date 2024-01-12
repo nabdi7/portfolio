@@ -10,9 +10,9 @@ export default function Home() {
   
   return (
     <>
-      
-      <div className='mainPage'>
       <Navbar />
+      <div className='mainPage'>
+      
         <div className='pageContainer'> 
           <div className='container'>
             <div className='imageContainer'>

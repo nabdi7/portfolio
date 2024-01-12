@@ -2,7 +2,7 @@ const Footer = () => {
   const YEAR = new Date().getFullYear();
 
   return (
-    <div style={{ textAlign: 'center', marginTop: '8rem' }}>
+    <div style={{ textAlign: 'center', marginTop: '6rem', marginBottom: '6rem' }}>
       <small>
         <time>{YEAR}</time> © Najib Abdi.
         {/* <a href="/feed.xml">RSS</a> */}
