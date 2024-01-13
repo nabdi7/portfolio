@@ -1,17 +1,18 @@
 'use client'
 
-import styles from '../styles/blogs.scss';
-import Navbar from '../components/Navbar' 
-import Footer from '../components/Footer'
+import styles from '../../styles/blogs.scss';
+import Navbar from '../../components/Navbar'; 
+import Footer from '../../components/Footer'
 
 export default function BlogsPage() {
+
   return (
     <>
 
     <Navbar />  
     <div className='mainPage'>
       Blogs page content
-
+        
       {/* blog topics */}
       <div className='blogs'>
         <div className='blog-container'>
@@ -52,3 +53,4 @@ export default function BlogsPage() {
     </>
   );
 };
+
