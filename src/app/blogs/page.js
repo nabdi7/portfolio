@@ -36,7 +36,7 @@ export default function BlogsPage() {
         <div className='subscription'>
           <div className='subscription-container'>
             <h3>Subscribe to my newsletter</h3>
-            <p>Get notified about new blog posts, and updates.</p>
+            <p>Get notified about new blogs, and updates.</p>
             <div className='subscription-input'>
               <input type="text" placeholder='Enter your email address'/>
               <button>Subscribe</button>
