@@ -32,6 +32,8 @@ export default function BlogsPage() {
           </div>
         </div>
 
+        {/* blogs */}
+
         {/* subscription */}
         <div className='subscription'>
           <div className='subscription-container'>
