@@ -1,6 +1,6 @@
 import { Navbar } from "./Navbar";
 import { Menu } from "../menu/Menu";
-// import { ThemeToggle } from "../theme/Theme-Toggle";
+// import { ThemeToggle } from "../theme/ThemeToggle";
 
 export function Header() {
   return (
