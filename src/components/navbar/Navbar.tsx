@@ -3,7 +3,6 @@
 import { siteConfig } from "@/config/site";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-// import { ThemeToggle } from "../theme/Theme-Toggle";
 
 export function Navbar() {
   const pathname = usePathname();

@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { Footer } from "@/components/footer/Footer";
 import { Header } from "@/components/navbar/Header";
-// import { Providers } from "../components/theme/ThemeContext";
+import { ThemeProvider } from "@/components/theme/ThemeProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,13 +20,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        {/* <Providers> */}
+      <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
         <div className="relative flex min-h-dvh flex-col bg-background">
           <Header />
           <main className="flex-1">{children} </main>
           <Footer />
         </div>
-        {/* </Providers> */}
+      </ThemeProvider>
       </body>
     </html>
   );
