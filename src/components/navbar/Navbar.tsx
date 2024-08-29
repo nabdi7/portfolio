@@ -9,7 +9,7 @@ export function Navbar() {
   return (
     <nav className="flex justify-center items-center space-x-4 lg:space-x-6">
       <Link href="/" className="mr-6 flex items-center space-x-2">
-        <span className="font-bold">{siteConfig.name}</span>
+        <span className="font-bold">{siteConfig.name}.</span>
       </Link>
       <Link
         href="/projects"
