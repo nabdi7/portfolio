@@ -1,3 +1,5 @@
+import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import Script from "next/script";
@@ -5,7 +7,7 @@ import "./globals.css";
 import { Footer } from "@/components/footer/Footer";
 import { Header } from "@/components/navbar/Header";
 import { siteConfig } from "@/config/site";
-import Providers from '@/components/theme/providers';
+import Providers from '@/components/theme/providers'; 
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -97,13 +99,13 @@ export default function RootLayout({
             style={{ display: "none", visibility: "hidden" }}
           />
         </noscript>
-        <Providers>
+        {/* <Providers> */}
           <div className="relative flex min-h-dvh flex-col bg-background">
             <Header />
-            <main className="flex-1">{children} </main>
+            <main className="flex-1">{children} <Analytics /> <SpeedInsights /></main>
             <Footer />
           </div>
-        </Providers>
+        {/* </Providers> */}
       </body>
     </html>
   );
