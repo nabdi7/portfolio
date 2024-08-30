@@ -39,6 +39,7 @@ export function PostItem({
       </div>
       <div className="flex justify-between items-center">
         <dl>
+        <dt className="sr-only">Published On</dt>
           <dd className="text-sm sm:text-base font-medium flex items-center ">
             <time dateTime={date} className="text-sm text-gray-600 mt-1">
               {formatDate(date)}
