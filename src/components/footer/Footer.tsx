@@ -19,7 +19,7 @@ export function Footer() {
             {/* <Icons name="twitter" className="h-6 w-6" /> */}
             <Icons name="instagram" />
           </a>
-          <a target="_blank" rel="noreferrer" href="mailto:abdinajka@gmail.com" className="hover:text-gray-300">
+          <a href="mailto:abdinajka@gmail.com" className="hover:text-gray-300">
             <span className="sr-only">Mail</span>
             <Icons name="email" />
           </a>
