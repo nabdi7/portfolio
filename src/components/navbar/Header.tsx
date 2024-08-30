@@ -2,7 +2,7 @@
 
 import { Navbar } from "./Navbar";
 import { Menu } from "../menu/Menu";
-import { ThemeToggle } from "../theme/ThemeToggle";
+import { ThemeToggle } from "../theme/theme-toggle";
 
 export function Header() {
   return (
@@ -10,7 +10,7 @@ export function Header() {
       <div className="max-w-3xl mx-auto flex h-14 items-center">
         <Navbar />
         <div className="flex flex-1 items-center justify-end space-x-4">
-          <ThemeToggle />
+          {/* <ThemeToggle /> */}
           <div className="flex items-center space-x-2 lg:hidden sm:hidden">
             <Menu />
           </div>
