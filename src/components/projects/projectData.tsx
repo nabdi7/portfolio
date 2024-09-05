@@ -12,7 +12,7 @@ export const projects: Project[] = [
       { name: "Typescript", icon: "https://res.cloudinary.com/dlehxkdtn/image/upload/typescript_pz6vdc.svg" },
       { name: "Tailwindcss", icon: "https://res.cloudinary.com/dlehxkdtn/image/upload/tailwindcss_v02wy0.svg" },
     ],
-    url: "https://www.qualitydesigns.site",
+    url: "https://www.qdwebdesigns.com",
     sourceUrl: "https://www.qualitydesigns.site",
   },
   {
@@ -77,7 +77,7 @@ export const projects: Project[] = [
       { name: "Mdx", icon: "https://res.cloudinary.com/dlehxkdtn/image/upload/mdx_obv7uo.svg" },
     ],
     url: "https://www.najibabdi.me",
-    sourceUrl: "https://github.com/nabdi7/portfolio-web",
+    sourceUrl: "https://github.com/nabdi7/najibabdi.me",
   },
   {
     title: "Halal Zone",
