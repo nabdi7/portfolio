@@ -13,7 +13,7 @@ export const projects: Project[] = [
       { name: "Tailwindcss", icon: "https://res.cloudinary.com/dlehxkdtn/image/upload/tailwindcss_v02wy0.svg" },
     ],
     url: "https://www.qdwebdesigns.com",
-    sourceUrl: "https://www.qualitydesigns.site",
+    sourceUrl: "https://www.qdwebdesigns.com",
   },
   {
     title: "Bright Smiles Childcare",
