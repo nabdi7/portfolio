@@ -29,7 +29,7 @@ const Projects: React.FC = () => {
             "Machine learning",
             // "Game development",
             // "Ui design",
-            "Animations",
+            // "Animations",
           ].map((category) => (
             <button
               key={category}
