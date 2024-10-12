@@ -24,8 +24,8 @@ const Work = () => {
                 </div>
               </div>
               <div className="grow pb-8 group-last:pb-0">
-                <h3 className="mb-1 text-sm text-gray-600">{job.date}</h3>
-                <p className="font-semibold text-md text-gray-800">
+                <h3 className="mb-1 text-sm text-gray-500">{job.date}</h3>
+                <p className="font-semibold text-md">
                   {job.position}{" "}
                   <span className="text-blue-500 text-md md:text-md">
                     @ {job.company}
@@ -50,11 +50,11 @@ const Work = () => {
           {educationData.map((edu, index) => (
             <div className="p-4 border border-gray-200 rounded-lg" key={index}>
               {edu.svgIcon}
-              <h3 className="mb-1 text-sm text-gray-600">{edu.date}</h3>
-              <p className="font-semibold text-md text-gray-800">
+              <h3 className="mb-1 text-sm text-gray-500">{edu.date}</h3>
+              <p className="font-semibold text-md">
                 {edu.degree}
               </p>
-              <p className="mt-1 text-md text-gray-600">{edu.institute}</p>
+              <p className="mt-1 text-md text-gray-500">{edu.institute}</p>
             </div>
           ))}
         </div>
