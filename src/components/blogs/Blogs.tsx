@@ -41,7 +41,7 @@ const Blogs = () => {
           )}
       </div>
     </section>
-    {/* <Subscribe /> */}
+    <Subscribe />
     </>
   )
 }

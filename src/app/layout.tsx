@@ -22,6 +22,11 @@ export const metadata: Metadata = {
     "Web Developer",
     "Software Engineer",
     "Machine Learning",
+    "Full Stack Developer",
+    "Mobile App Developer",
+    "UI/UX Designer",
+    "Computer Science",
+    "Software Development",
   ],
   authors: [
     {
@@ -30,6 +35,12 @@ export const metadata: Metadata = {
     },
   ],
   creator: "Najib Abdi",
+  publisher: "Najib Abdi",
+  formatDetection: {
+    email: true,
+    telephone: true,
+    address: true,
+  },
   metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL ?? siteConfig.url),
   openGraph: {
     type: "website",
@@ -60,6 +71,17 @@ export const metadata: Metadata = {
     apple: "/apple-touch-icon.png",
   },
   manifest: `/site.webmanifest`,
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
 };
 
 export const viewport: Viewport = {

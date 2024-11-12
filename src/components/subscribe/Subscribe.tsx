@@ -1,18 +1,39 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
+import { FormEvent } from "react";
 
 const Subscribe = () => {
+  const [email, setEmail] = useState("");
+  const [showSuccessMessage, setShowSuccessMessage] = useState(false);
+
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    if (email.trim() === "") {
+      return;
+    }
+
+    setShowSuccessMessage(true);
+    setEmail("");
+
+    const timer = setTimeout(() => {
+      setShowSuccessMessage(false);
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  };
+
   return (
     <section className="py-20">
       <div className="max-w-screen-xl mx-auto px-4 md:px-8">
-        <div className="flex flex-col md:flex-col max-w-3xl mx-auto ">
+        <div className="flex flex-col md:flex-col max-w-3xl mx-auto">
           <h1 className="text-2xl font-bold">Subscribe to my newsletter</h1>
           <p className="text-md text-gray-600 mt-2">
             Get notified about new blogs, and updates.
           </p>
         </div>
-        <div className="flex flex-col md:flex-col max-w-3xl mx-auto mt-6"> 
-          <div className="flex md:flex-row items-center gap-x-3">
-            <div className="relative">
+        <div className="flex flex-col md:flex-row max-w-3xl mx-auto mt-6">
+          <form onSubmit={handleSubmit} className="flex items-center gap-x-3">
+            <div className="relative flex-1">
               <svg
                 className="w-6 h-6 text-gray-400 absolute left-3 inset-y-0 my-auto"
                 xmlns="http://www.w3.org/2000/svg"
@@ -29,6 +50,8 @@ const Subscribe = () => {
               </svg>
               <input
                 type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 required
                 placeholder="Enter your email"
                 className="w-full pl-12 pr-3 py-2 text-gray-500 bg-white outline-none border border-gray-300 focus:border-gray-600 shadow-sm rounded-lg"
@@ -37,7 +60,15 @@ const Subscribe = () => {
             <button className="block w-auto py-3 px-4 font-medium text-sm text-center text-white bg-gray-700 hover:bg-gray-800 active:bg-gray-600 active:shadow-none rounded-lg shadow">
               Subscribe
             </button>
-          </div>
+          </form>
+        </div>
+        <div className="flex flex-col md:flex-row max-w-3xl mx-auto mt-4">
+          {showSuccessMessage && (
+            <div className=" bg-green-100 border border-green-400 text-green-700 px-2 py-2 rounded ">
+              <strong className="font-bold">Success!</strong> You have been
+              subscribed to the newsletter.
+            </div>
+          )}
         </div>
       </div>
     </section>
