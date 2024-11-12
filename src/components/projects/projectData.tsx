@@ -16,6 +16,19 @@ export const projects: Project[] = [
     sourceUrl: "https://www.qdwebdesigns.com",
   },
   {
+    title: "Hiba Family Daycare",
+    description: "A website for Hiba Family Childcare, Licensed family childcare in Seattle WA.",
+    category: "Web development",
+    tag: [
+      { name: "Next.js", icon: "https://res.cloudinary.com/dlehxkdtn/image/upload/nextjs_kcwvei.svg" },
+      { name: "React", icon: "https://res.cloudinary.com/dlehxkdtn/image/upload/react_quwzku.svg" },
+      { name: "Typescript", icon: "https://res.cloudinary.com/dlehxkdtn/image/upload/typescript_pz6vdc.svg" },
+      { name: "Tailwindcss", icon: "https://res.cloudinary.com/dlehxkdtn/image/upload/tailwindcss_v02wy0.svg" },
+    ],
+    url: "https://www.hibafamilychildcare.com",
+    sourceUrl: "https://github.com/nabdi7/hibafamilychildcare",
+  },
+  {
     title: "Bright Smiles Childcare",
     description: "A website for Bright Smiles Childcare, emphasizing safety and care for young children.",
     category: "Web development",
@@ -54,7 +67,7 @@ export const projects: Project[] = [
     sourceUrl: "/",
   },
   {
-    title: "Emotions",
+    title: "Sakina App",
     description: "An app facilitating emotional well-being management.",
     category: "App development",
     tag: [
@@ -62,7 +75,7 @@ export const projects: Project[] = [
       { name: "MongoDB", icon: "https://res.cloudinary.com/dlehxkdtn/image/upload/mongodb_z5kave.svg" },
       { name: "Firebase", icon: "https://res.cloudinary.com/dlehxkdtn/image/upload/firebase_q2piz5.svg" },
     ],
-    url: "https://www.emotionstm.com",
+    url: "https://emotions-web.vercel.app/",
     sourceUrl: "https://github.com/nabdi7/emotions-web",
   },
   {
