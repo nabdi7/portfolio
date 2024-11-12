@@ -4,7 +4,7 @@ import Projects from "@/components/projects/Projects";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: "Najib Abdi - Featured Projects & Portfolio",
+  title: "Najib Abdi - Projects",
   description:
     "Explore Najib Abdi's software engineering projects, including full-stack applications, mobile apps, and innovative solutions in web development.",
   keywords: [
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: `${siteConfig.url}/projects`,
-    title: "Najib Abdi - Featured Projects & Portfolio",
+    title: "Najib Abdi - Projects",
     description:
       "Explore Najib Abdi's software engineering projects, including full-stack applications, mobile apps, and innovative solutions in web development.",
     siteName: siteConfig.name,
@@ -44,13 +44,13 @@ export const metadata: Metadata = {
         url: `${siteConfig.url}/opengraph-image.png`,
         width: 1200,
         height: 630,
-        alt: "Najib Abdi's Project Portfolio",
+        alt: "Najib Abdi's Project",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Najib Abdi - Featured Projects & Portfolio",
+    title: "Najib Abdi - Projects",
     description:
       "Explore Najib Abdi's software engineering projects, including full-stack applications, mobile apps, and innovative solutions in web development.",
     creator: "@najibabdi7",
